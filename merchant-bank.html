@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cam Lo Merchant Banking</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <style>
+        /* HỆ THỐNG LƯỚI Ô VUÔNG CHO CÁC CÔNG TY CON (FLASHCARD GRID) */
+        .merchant-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        /* THIẾT KẾ CÁC Ô KHỐI Ô VUÔNG CÔNG TY MỘC MẠC CHUẨN PHONG CÁCH TỐI GIẢN */
+        .company-card {
+            border: 1px solid #D3D3D3;
+            background: #FAFAFA;
+            padding: 12px;
+            font-family: Calibri, sans-serif;
+            box-sizing: border-box;
+        }
+        .company-card:hover {
+            border-color: #0033CC;
+            background: #FFFFFF;
+        }
+        .company-title {
+            font-weight: bold;
+            font-size: 15px;
+            color: #000000;
+            margin-bottom: 4px;
+        }
+        
+        /* Đồng bộ link chữ xanh cổ điển gạch chân, đứng im không đổi màu cam khi di chuột */
+        .company-title a {
+            color: #0033CC;
+            text-decoration: underline;
+        }
+        
+        .company-desc {
+            font-size: 12px;
+            color: #000000;
+            font-style: italic;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body bgcolor="#FFFFFF" text="#000000" link="#0033CC" vlink="#0033CC" style="font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif; margin: 0 auto; max-width: 900px; padding: 20px; line-height: 1.5;">
+
+    <!-- THANH NGÔN NGỮ GÓC TRÊN PHẢI -->
+    <div align="right" style="padding-bottom: 20px; font-size: 14px; color: #000000;">
+        <b>Language:</b> <a href="#" style="color: #0033CC; text-decoration: underline;">English</a> | Tiếng Việt
+    </div>
+
+    <!-- TIÊU ĐỀ THƯƠNG HIỆU CĂN GIỮA TRANG TRỌNG ĐEN TUYỀN -->
+    <center style="margin-top: 10px; margin-bottom: 30px;">
+        <font size="6" face="Calibri" style="font-weight: bold; letter-spacing: 1px;">CAM LO MERCHANT BANKING</font><br>
+        <span style="font-size: 13px; font-style: italic; display: inline-block; margin-top: 5px;">The proprietary investment and long-term business operation arm of Cam Lo Group.</span>
+    </center>
+
+    <hr color="#A0A0A0" size="1" style="margin-bottom: 25px;">
+
+    <!-- ================= KHỐI TRỤC ĐỐI XỨNG CHIA ĐÔI CHIỀU DỌC (RỘNG RÃI 60PX GAP) ================= -->
+    <div style="display: flex; gap: 60px; flex-wrap: wrap; align-items: flex-start; width: 100%;">
+        
+        <!-- NỬA TRÁI: DIRECT INVESTMENTS (THÂU TÓM ĐA NGÀNH OPERATING) -->
+        <div style="flex: 1; min-width: 380px;">
+            <h3 style="font-size: 18px; font-weight: bold; margin-top: 0; margin-bottom: 5px; color: #000000;">Direct Investments</h3>
+            <p style="font-size: 13px; font-style: italic; margin: 0 0 15px 0; color: #000000;">Long-term majority stakes in diversified operating enterprises.</p>
+            
+            <hr color="#E0E0E0" size="1">
+            
+            <!-- LƯỚI Ô VUÔNG FLASHCARD NỬA TRÁI -->
+            <div class="merchant-grid">
+                
+                <!-- Ô công ty 1: Cam Lo Logistics -->
+                <div class="company-card">
+                    <div class="company-title"><a href="#" target="_self">Cam Lo Logistics Corp.</a></div>
+                    <div class="company-desc">Regional supply chain infrastructure and warehousing solutions.</div>
+                </div>
+                
+                <!-- Ô công ty 2: NQH Consumer Goods -->
+                <div class="company-card">
+                    <div class="company-title"><a href="#" target="_self">NQH Consumer Goods</a></div>
+                    <div class="company-desc">Manufacturing and distribution of high-demand essential products.</div>
+                </div>
+                
+                <!-- Tương lai bạn cứ copy cái cụm thẻ <div class="company-card">...</div> ném nối đuôi vào đây, chúng sẽ tự động thẳng hàng dọc tăm tắp -->
+
+            </div>
+        </div>
+
+        <!-- NỬA PHẢI: ADVISORY SERVICES (CÁC CÔNG TY DỊCH VỤ CHIẾN LƯỢC) -->
+        <div style="flex: 1; min-width: 380px;">
+            <h3 style="font-size: 18px; font-weight: bold; margin-top: 0; margin-bottom: 5px; color: #000000;">Advisory Services</h3>
+            <p style="font-size: 13px; font-style: italic; margin: 0 0 15px 0; color: #000000;">Wholly-owned subsidiaries delivering high-touch corporate solutions.</p>
+            
+            <hr color="#E0E0E0" size="1">
+            
+            <!-- LƯỚI Ô VUÔNG FLASHCARD NỬA PHẢI -->
+            <div class="merchant-grid">
+                
+                <!-- Ô công ty dịch vụ 1: Cam Lo Tech -->
+                <div class="company-card">
+                    <div class="company-title"><a href="#" target="_self">Cam Lo Tech Solutions</a></div>
+                    <div class="company-desc">Enterprise software integration, IT outsourcing, and automation.</div>
+                </div>
+                
+                <!-- Ô công ty dịch vụ 2: NQH M&A Advisory -->
+                <div class="company-card">
+                    <div class="company-title"><a href="#" target="_self">NQH M&A Advisory</a></div>
+                    <div class="company-desc">Strategic corporate restructuring, tax optimization, and transaction services.</div>
+                </div>
+                
+                <!-- Tương lai ném thêm các công ty dịch vụ (Thuế, Tái cấu trúc...) nối đuôi tại đây -->
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- CHÂN TRANG BẢN QUYỀN CỐ ĐỊNH Ở ĐÁY -->
+    <br><br><br>
+    <hr color="#A0A0A0" size="1">
+    <center style="margin-top: 20px; font-size: 13px;">
+        © 2026 <b>Cam Lo Merchant Banking</b>, a Cam Lo Company. All rights reserved.
+    </center>
+
+</body>
+</html>
