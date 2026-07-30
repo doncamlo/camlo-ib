@@ -7,6 +7,16 @@
     <link rel="icon" type="image/png" href="favicon.png">
     
     <style>
+        /* HIỆU ỨNG NHÁY MÀU CAM ĐỒNG BỘ CHO RIÊNG NÚT BACK TO HOME */
+        .back-link a {
+            color: #0033CC !important;
+            text-decoration: underline;
+        }
+        .back-link a:hover {
+            color: #FF9933 !important;
+            text-decoration: underline;
+        }
+
         /* HỆ THỐNG LƯỚI Ô VUÔNG CHO CÁC CÔNG TY CON (FLASHCARD GRID) */
         .merchant-grid {
             display: grid;
@@ -15,112 +25,107 @@
             margin-top: 15px;
         }
 
-        /* THIẾT KẾ CÁC Ô KHỐI Ô VUÔNG CÔNG TY MỘC MẠC CHUẨN PHONG CÁCH TỐI GIẢN */
+        /* THIẾT KẾ Ô KHỐI CÔNG TY TRẦN TRỤI - NỀN TRẮNG CƠ BẢN */
         .company-card {
             border: 1px solid #D3D3D3;
-            background: #FAFAFA;
+            background: #FFFFFF; /* Đổi về nền trắng tinh khiết theo ý bạn */
             padding: 12px;
             font-family: Calibri, sans-serif;
             box-sizing: border-box;
         }
         .company-card:hover {
             border-color: #0033CC;
-            background: #FFFFFF;
         }
+        
+        /* TIÊU ĐỀ KHÓA CỨNG LINK XANH DƯƠNG ĐỨNG IM KHÔNG ĐỔI MÀU */
         .company-title {
             font-weight: bold;
             font-size: 15px;
-            color: #000000;
             margin-bottom: 4px;
         }
-        
-        /* Đồng bộ link chữ xanh cổ điển gạch chân, đứng im không đổi màu cam khi di chuột */
         .company-title a {
             color: #0033CC;
             text-decoration: underline;
         }
         
+        /* ĐOẠN MÔ TẢ IN NGHIÊNG KHÍT DÒNG (ĐÃ GỌT DƯỚI 2 DÒNG) */
         .company-desc {
             font-size: 12px;
             color: #000000;
             font-style: italic;
-            line-height: 1.4;
+            line-height: 1.3;
         }
     </style>
 </head>
 <body bgcolor="#FFFFFF" text="#000000" link="#0033CC" vlink="#0033CC" style="font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif; margin: 0 auto; max-width: 900px; padding: 20px; line-height: 1.5;">
 
+    <!-- NÚT BACK TO HOME DÀN HÀNG TRÊN CÙNG - NHÁY CAM KHI HOVER -->
+    <div class="back-link" style="font-size: 14px; margin-bottom: 10px;">
+        <a href="index.html">Back to Home Page</a>
+    </div>
+
     <!-- THANH NGÔN NGỮ GÓC TRÊN PHẢI -->
-    <div align="right" style="padding-bottom: 20px; font-size: 14px; color: #000000;">
+    <div align="right" style="padding-top: 5px; padding-bottom: 20px; font-size: 14px; color: #000000;">
         <b>Language:</b> English | <a href="#" style="color: #0033CC; text-decoration: underline;">Tiếng Việt</a>
     </div>
 
-    <!-- Đường dẫn quay lại trang chủ (Có nháy màu cam mượt mà nhờ !important) -->
-    <div class="back-link" style="font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;">
-        <p><a href="index.html">Back to Home Page</a></p>
-    </div>
-    
     <!-- TIÊU ĐỀ THƯƠNG HIỆU CĂN GIỮA TRANG TRỌNG ĐEN TUYỀN -->
-    <center style="margin-top: 15px; margin-bottom: 25px;">
+    <center style="margin-top: 10px; margin-bottom: 30px;">
         <font size="7" face="Calibri" style="font-weight: bold; letter-spacing: 1px;">CAM LO MERCHANT BANKING</font><br>
-        <span style="font-size: 17px; font-style: bold; display: inline-block; margin-top: 5px;">Where Boring Businesses Meet Elite Advisory</span>
+        <span style="font-size: 17px; font-style: italic; display: inline-block; margin-top: 5px;">Where Boring Businesses Meet Elite Advisory</span>
     </center>
 
     <hr color="#A0A0A0" size="1" style="margin-bottom: 25px;">
 
-    <!-- ================= KHỐI TRỤC ĐỐI XỨNG CHIA ĐÔI CHIỀU DỌC (RỘNG RÃI 60PX GAP) ================= -->
+    <!-- ================= KHỐI TRỤC ĐỐI XỨNG CHIA ĐÔI CHIỀU DỌC ================= -->
     <div style="display: flex; gap: 60px; flex-wrap: wrap; align-items: flex-start; width: 100%;">
         
-        <!-- NỬA TRÁI: DIRECT INVESTMENTS (THÂU TÓM ĐA NGÀNH OPERATING) -->
+        <!-- NỬA TRÁI: DIRECT INVESTMENTS -->
         <div style="flex: 1; min-width: 380px;">
-            <h3 style="font-size: 18px; font-weight: bold; margin-top: 0; margin-bottom: 3px; color: #000000;">Direct Investments</h3>
+            <h3 style="font-size: 18px; font-weight: bold; margin-top: 0; margin-bottom: 5px; color: #000000;">Direct Investments</h3>
             <p style="font-size: 13px; font-style: italic; margin: 0 0 15px 0; color: #000000;">Non-advisory Operations</p>
             
             <hr color="#E0E0E0" size="1">
             
-            <!-- LƯỚI Ô VUÔNG FLASHCARD NỬA TRÁI -->
+            <!-- LƯỚI Ô VUÔNG FLASHCARD NỀN TRẮNG NỬA TRÁI -->
             <div class="merchant-grid">
                 
-                <!-- Ô công ty 1: Cam Lo Logistics -->
+                <!-- Ô công ty 1: Đã gọt mô tả ngắn gọn 1 dòng -->
                 <div class="company-card">
-                    <div class="company-title"><a href="#" target="_self">Cam Lo Logistics Corp.</a></div>
-                    <div class="company-desc">Regional supply chain infrastructure and warehousing solutions.</div>
+                    <div class="company-title"><a href="#">Cam Lo Logistics Corp.</a></div>
+                    <div class="company-desc">Regional supply chain and warehousing solutions.</div>
                 </div>
                 
-                <!-- Ô công ty 2: NQH Consumer Goods -->
+                <!-- Ô công ty 2: Đã gọt mô tả ngắn gọn 1 dòng -->
                 <div class="company-card">
-                    <div class="company-title"><a href="#" target="_self">NQH Consumer Goods</a></div>
-                    <div class="company-desc">Manufacturing and distribution of high-demand essential products.</div>
+                    <div class="company-title"><a href="#">NQH Consumer Goods</a></div>
+                    <div class="company-desc">Manufacturing and distribution of essential goods.</div>
                 </div>
-                
-                <!-- Tương lai bạn cứ copy cái cụm thẻ <div class="company-card">...</div> ném nối đuôi vào đây, chúng sẽ tự động thẳng hàng dọc tăm tắp -->
 
             </div>
         </div>
 
-        <!-- NỬA PHẢI: ADVISORY SERVICES (CÁC CÔNG TY DỊCH VỤ CHIẾN LƯỢC) -->
+        <!-- NỬA PHẢI: ADVISORY SERVICES -->
         <div style="flex: 1; min-width: 380px;">
-            <h3 style="font-size: 18px; font-weight: bold; margin-top: 0; margin-bottom: 3px; color: #000000;">Advisory Services</h3>
+            <h3 style="font-size: 18px; font-weight: bold; margin-top: 0; margin-bottom: 5px; color: #000000;">Advisory Services</h3>
             <p style="font-size: 13px; font-style: italic; margin: 0 0 15px 0; color: #000000;">Advisory Operations</p>
             
             <hr color="#E0E0E0" size="1">
             
-            <!-- LƯỚI Ô VUÔNG FLASHCARD NỬA PHẢI -->
+            <!-- LƯỚI Ô VUÔNG FLASHCARD NỀN TRẮNG NỬA PHẢI -->
             <div class="merchant-grid">
                 
-                <!-- Ô công ty dịch vụ 1: Cam Lo Tech -->
+                <!-- Ô công ty dịch vụ 1: Đã gọt mô tả ngắn gọn 1 dòng -->
                 <div class="company-card">
-                    <div class="company-title"><a href="#" target="_self">Cam Lo Tech Solutions</a></div>
-                    <div class="company-desc">Enterprise software integration, IT outsourcing, and automation.</div>
+                    <div class="company-title"><a href="#">Cam Lo Tech Solutions</a></div>
+                    <div class="company-desc">Enterprise software integration and IT automation.</div>
                 </div>
                 
-                <!-- Ô công ty dịch vụ 2: NQH M&A Advisory -->
+                <!-- Ô công ty dịch vụ 2: Đã gọt mô tả ngắn gọn 1 dòng -->
                 <div class="company-card">
-                    <div class="company-title"><a href="#" target="_self">NQH M&A Advisory</a></div>
-                    <div class="company-desc">Strategic corporate restructuring, tax optimization, and transaction services.</div>
+                    <div class="company-title"><a href="#">NQH M&A Advisory</a></div>
+                    <div class="company-desc">Strategic corporate restructuring and transaction services.</div>
                 </div>
-                
-                <!-- Tương lai ném thêm các công ty dịch vụ (Thuế, Tái cấu trúc...) nối đuôi tại đây -->
 
             </div>
         </div>
@@ -128,7 +133,11 @@
     </div>
 
     <!-- CHÂN TRANG BẢN QUYỀN CỐ ĐỊNH Ở ĐÁY -->
-    <br>
+    <br><br><br>
     <hr color="#A0A0A0" size="1">
-    </body>
+    <center style="margin-top: 20px; font-size: 13px;">
+        © 2026 <b>Cam Lo Merchant Banking</b>, a Cam Lo Company. All rights reserved.
+    </center>
+
+</body>
 </html>
