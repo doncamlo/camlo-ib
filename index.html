@@ -7,136 +7,127 @@
     <link rel="icon" type="image/png" href="favicon.png">
     
     <style>
-        /* HỆ THỐNG LƯỚI KHÓA 2 DỊCH VỤ MỖI DÒNG (RỘNG RÃI, THOÁNG ĐÃNG) */
+        /* HỆ THỐNG LƯỚI KHÓA 2 CỘT ĐỐI XỨNG TUYỆT ĐỐI */
         .ib-grid {
             display: grid;
             grid-template-columns: repeat(2, 390px);
             gap: 25px 60px;
             justify-content: center;
-            margin-top: 30px;
+            margin-top: 15px;
+            width: 100%;
         }
 
-        /* KHỐI Ô DỊCH VỤ MỘC MẠC */
+        /* KHỐI DỊCH VỤ VÀ NỘI DUNG CHÂN PHƯƠNG */
         .service-block {
             font-family: Calibri, Candara, sans-serif;
             font-size: 15px;
             line-height: 1.5;
         }
 
-        /* TIÊU ĐỀ DỊCH VỤ ĐEN TUYỀN CHÂN PHƯƠNG */
-        .service-title {
+        /* TIÊU ĐỀ LỚN MÀU XANH DƯƠNG CỔ ĐIỂN - ĐỨNG IM KHÔNG ĐỔI MÀU */
+        .service-title a {
             font-size: 18px;
             font-weight: bold;
-            color: #000000;
-            margin-bottom: 5px;
-        }
-
-        /* SƠ ĐỒ CÂY NÉT ĐỨT KHỐI ASSET MANAGEMENT */
-        .tree-container {
-            font-family: Calibri, monospace;
-            font-size: 15px;
-            line-height: 1.2;
-            margin-top: 8px;
-            padding-left: 5px;
-            display: block;
-        }
-        
-        /* ÉP BUỘC TỪNG NHÁNH CÂY PHẢI ĐỔ DỌC XUỐNG, KHÔNG DÀN NGANG */
-        .tree-line {
-            display: block !important;
-            margin-bottom: 6px;
-            white-space: nowrap;
-        }
-
-        /* KHÓA CỨNG MÀU XANH CỔ ĐIỂN, ĐỨNG IM KHÔNG ĐỔI SANG MÀU CAM KHI DI CHUỘT */
-        .tree-line a {
-            color: #0033CC;
+            color: #0033CC !important;
             text-decoration: underline;
+        }
+
+        /* MỤC MÔ TẢ IN NGHIÊNG KHÍT DÒNG */
+        .service-desc {
+            font-size: 13px;
+            font-style: italic;
+            color: #000000;
+            display: block;
+            margin-top: 2px;
         }
     </style>
 </head>
 <body bgcolor="#FFFFFF" text="#000000" link="#0033CC" vlink="#0033CC" style="font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif; margin: 0 auto; max-width: 900px; padding: 20px; line-height: 1.5;">
 
-    <!-- NÚT CHỌN NGÔN NGỮ GÓC TRÊN PHẢI -->
+    <!-- THANH NGÔN NGỮ GÓC TRÊN PHẢI -->
     <div align="right" style="padding-bottom: 20px; font-size: 14px; color: #000000;">
         <b>Language:</b> <a href="#" style="color: #0033CC; text-decoration: underline;">English</a> | Tiếng Việt
     </div>
 
-    <!-- KHỐI LOGO NGÂN HÀNG CĂN GIỮA TUYỆT ĐỐI (Không viết thêm gì) -->
-    <center style="margin-top: 25px; margin-bottom: -3px;">
-        <img src="ib-logo.png" alt="The Cam Lo Investment Bank Logo" 
-             style="width: 450px; height: auto; object-fit: contain;">
+    <!-- LOGO ĐẠI BẢN DOANH CĂN GIỮA ĐỒNG BỘ -->
+    <center style="margin-top: 10px; margin-bottom: 30px;">
+        <font size="6" face="Calibri" style="font-weight: bold; letter-spacing: 1px;">CAM LO INVESTMENT BANK</font><br>
+        <span style="font-size: 13px; font-style: italic; display: inline-block; margin-top: 5px;">The official boutique investment banking and advisory arm of Cam Lo Group.</span>
     </center>
     
     <hr color="#A0A0A0" size="1" style="margin-bottom: 25px;">
 
-        <!-- CÂU DẪN VÀNG TRÊN: TÀI LIỆU TẬP ĐOÀN -->
-    <p style="margin: 0 0 15px 0; font-weight: bold; font-size: 16px; color: #000000;">About Us</p>
-
-    <!-- KHỐI BẢNG 1: CHỨA CÁC TÀI LIỆU VÀ QUẢN TRỊ -->
-    <div class="ib-grid">
-            <div class="service-block">
-            <div class="service-title" style="margin: 0 0 1px 0;"><a href="#" style="color: #0033CC; text-decoration: underline;">Who We Are</a></div>
-                    </div>
-        
+    <!-- ======================================================================
+         PHẦN 1: ABOUT US (SẠCH BÓNG DẤU CHẤM TRÒN - LƯỚI PHẲNG)
+         ====================================================================== -->
+    <h2 style="font-size: 18px; font-weight: bold; margin: 0 0 15px 0; color: #000000; font-family: Calibri, sans-serif;">About Us</h2>
+    
+    <div class="ib-grid" style="margin-bottom: 35px;">
+        <!-- Khối 1: Sạch dấu chấm -->
         <div class="service-block">
-            <div class="service-title" style="margin: 0 0 1px 0;"><a href="#" style="color: #0033CC; text-decoration: underline;">Corporate Governance</a></div>
-            <span style="font-size: 13px; font-style: italic; color: #000000; display: block; margin: 0;">Not available at the moment.</span>
+            <div class="service-title"><a href="#">Who We Are</a></div>
         </div>
-        
-        <!-- HÀNG 2 -->
-       
+        <!-- Khối 2: Sạch dấu chấm -->
         <div class="service-block">
-            <div class="service-title" style="margin: 0 0 1px 0;"><a href="#" style="color: #0033CC; text-decoration: underline;">Corporate Responsibilty</a></div>
-            <span style="font-size: 13px; font-style: italic; color: #000000; display: block; margin: 0;">Not available at the moment.</span>
+            <div class="service-title"><a href="#">Corporate Governance</a></div>
+            <span class="service-desc">Not available at the moment.</span>
         </div>
+        <!-- Khối 3: Sạch dấu chấm -->
+        <div class="service-block">
+            <div class="service-title"><a href="#">Corporate Responsibility</a></div>
+            <span class="service-desc">Not available at the moment.</span>
+        </div>
+    </div>
 
-    <!-- ĐƯỜNG KẺ NGANG NGĂN CÁCH -->
-    <br>
-    <hr width="100%" color="#EAEAEA" size="1">
-    <br>
+    <!-- ĐƯỜNG KẺ NGĂN CÁCH TẦNG DỨT KHOÁT -->
+    <hr color="#E0E0E0" size="1" style="margin: 25px 0; clear: both;">
 
-    <!-- CÂU DẪN VÀNG DƯỚI: LIÊN KẾT ĐẾN CÁC CÔNG TY THÀNH VIÊN -->
-    <p style="margin: 0 0 15px 0; font-weight: bold; font-size: 13px; color: #000000;">What We Do</p>
+    <!-- ======================================================================
+         PHẦN 2: WHAT WE DO (LƯỚI ĐỐI XỨNG & GIỮ NGUYÊN 3 DẤU CHẤM CỦA AM)
+         ====================================================================== -->
+    <h2 style="font-size: 18px; font-weight: bold; margin: 0 0 15px 0; color: #000000; font-family: Calibri, sans-serif;">What We Do</h2>
     
     <div class="ib-grid">
         
         <!-- TRỤ CỘT 1: CAM LO SECURITIES -->
         <div class="service-block">
-            <div class="service-title" style="margin: 0 0 1px 0;"><a href="#" style="color: #0033CC; text-decoration: underline;">Cam Lo Securities</a></div>
-            <span style="font-size: 13px; font-style: italic; color: #000000; display: block; margin: 0;">Deals & advisory services, commodity trading, and securities underwriting.</span>
+            <div class="service-title"><a href="#">Cam Lo Securities</a></div>
+            <span class="service-desc">Deals & advisory services, commodity trading, and securities underwriting.</span>
         </div>
 
         <!-- TRỤ CỘT 2: CAM LO STANDARD INSURANCE -->
         <div class="service-block">
-            <div class="service-title" style="margin: 0 0 1px 0;"><a href="#" style="color: #0033CC; text-decoration: underline;">Cam Lo Standard Insurance</a></div>
-            <span style="font-size: 13px; font-style: italic; color: #000000; display: block; margin: 0;">Premium non-life insurance solutions of the highest standard.</span>
+            <div class="service-title"><a href="#">Cam Lo Standard Insurance</a></div>
+            <span class="service-desc">Premium non-life insurance solutions of the highest standard.</span>
         </div>
 
         <!-- TRỤ CỘT 3: CAM LO INVESTMENT RESEARCH -->
         <div class="service-block">
-            <div class="service-title" style="margin: 0 0 1px 0;"><a href="#" style="color: #0033CC; text-decoration: underline;">Cam Lo Investment Research</a></div>
-            <span style="font-size: 13px; font-style: italic; color: #000000; display: block; margin: 0;">Data-driven corporate analysis, macro insights, and strategic evaluation.</span>
+            <div class="service-title"><a href="#">Cam Lo Investment Research</a></div>
+            <span class="service-desc">Data-driven corporate analysis, macro insights, and strategic evaluation.</span>
         </div>
 
-        <!-- TRỤ CỘT 4: CAM LO ASSET MANAGEMENT -->
+        <!-- TRỤ CỘT 4: CAM LO ASSET MANAGEMENT (GIỮ LẠI 3 DẤU CHẤM BULLET) -->
         <div class="service-block">
-            <div class="service-title" style="margin: 0 0 1px 0;">Cam Lo Asset Management (CLAM)</div>
+            <div class="service-title" style="font-size: 18px; font-weight: bold; color: #000000; margin-bottom: 2px;">
+                Cam Lo Asset Management (CLAM)
+            </div>
             
-            <!-- Tập hợp công ty con -->
-            <ul style="margin: 0; padding-left: 18px; font-size: 13px; line-height: 1.5; list-style-type: disc;">
-                <li style="margin-bottom: 3px;"><a href="boring-fund.html" style="color: #0033CC; text-decoration: underline;">NQH Boring Fund</a></li>
-                <li style="margin-bottom: 3px;"><a href="merchant-bank.html" style="color: #0033CC; text-decoration: underline;">Cam Lo Merchant Banking</a></li>
-                <li style="margin-bottom: 3px;"><a href="#" style="color: #0033CC; text-decoration: underline;">Società Immobiliare di Cam Lo</a></li>
+            <!-- Trả lại nguyên vẹn 3 dấu chấm tròn bullet đặc trưng theo đúng ý bạn -->
+            <ul style="margin: 6px 0 0 0; padding-left: 18px; font-size: 14px; line-height: 1.6; list-style-type: disc;">
+                <li style="margin-bottom: 4px;"><a href="boring-fund.html" style="color: #0033CC; text-decoration: underline;">NQH Boring Fund</a></li>
+                <li style="margin-bottom: 4px;"><a href="merchant-bank.html" style="color: #0033CC; text-decoration: underline;">Cam Lo Merchant Banking</a></li>
+                <li style="margin-bottom: 0;"><a href="#" style="color: #0033CC; text-decoration: underline;">Società Immobiliare di Cam Lo</a></li>
             </ul>
         </div>
+
     </div>
 
     <!-- CHÂN TRANG BẢN QUYỀN CỐ ĐỊNH Ở ĐÁY -->
-    <br>
+    <br><br><br>
     <hr color="#A0A0A0" size="1">
     <center style="margin-top: 20px; font-size: 13px;">
-        © 2026 Cam Lo Investment Bank, a Cam Lo Company. All rights reserved.
+        © 2026 <b>Cam Lo Investment Bank</b>, a Cam Lo Company. All rights reserved.
     </center>
 
 </body>
