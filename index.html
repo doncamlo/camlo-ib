@@ -3,84 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Cam Lo Investment Bank</title>
+    <title>Cam Lo Investment Bank</title>
     <link rel="icon" type="image/png" href="favicon.png">
-   
-    <!-- HIỆU ỨNG TƯƠNG TÁC CHO DÒNG BACK TO HOME PAGE -->
+    
     <style>
-        /* Dòng Back to Home Page mặc định màu xanh, di chuột hóa cam mượt mà */
-        .back-link a {
-            color: #0033CC !important;
-            text-decoration: underline;
+        /* HỆ THỐNG LƯỚI KHÓA 2 DỊCH VỤ MỖI DÒNG (RỘNG RÃI, THOÁNG ĐÃNG) */
+        .ib-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 390px);
+            gap: 25px 60px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        /* KHỐI Ô DỊCH VỤ MỘC MẠC */
+        .service-block {
+            font-family: Calibri, Candara, sans-serif;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        /* TIÊU ĐỀ DỊCH VỤ ĐEN TUYỀN CHÂN PHƯƠNG */
+        .service-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #000000;
+            margin-bottom: 5px;
+        }
+
+        /* SƠ ĐỒ CÂY NÉT ĐỨT KHỐI ASSET MANAGEMENT */
+        .tree-container {
+            font-family: Calibri, monospace;
+            font-size: 15px;
+            line-height: 1.2;
+            margin-top: 8px;
+            padding-left: 5px;
+            display: block;
         }
         
-        /* Đồng bộ danh sách liên kết phía dưới không bị gạch chân thô */
-        .ib-links a {
+        /* ÉP BUỘC TỪNG NHÁNH CÂY PHẢI ĐỔ DỌC XUỐNG, KHÔNG DÀN NGANG */
+        .tree-line {
+            display: block !important;
+            margin-bottom: 6px;
+            white-space: nowrap;
+        }
+
+        /* KHÓA CỨNG MÀU XANH CỔ ĐIỂN, ĐỨNG IM KHÔNG ĐỔI SANG MÀU CAM KHI DI CHUỘT */
+        .tree-line a {
             color: #0033CC;
             text-decoration: underline;
         }
-          </style>
+    </style>
 </head>
-<body bgcolor="#FFFFFF" text="#000000" link="#0033CC" vlink="#0033CC" style="font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif; margin: 0 auto; max-width: 800px; padding: 30px 20px; line-height: 1.6;">
+<body bgcolor="#FFFFFF" text="#000000" link="#0033CC" vlink="#0033CC" style="font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif; margin: 0 auto; max-width: 900px; padding: 20px; line-height: 1.5;">
 
-    <!-- NÚT NGÔN NGỮ GÓC TRÊN BÊN PHẢI (Mặc định không nháy màu theo ý bạn) -->
+    <!-- NÚT CHỌN NGÔN NGỮ GÓC TRÊN PHẢI -->
     <div align="right" style="padding-bottom: 20px; font-size: 14px; color: #000000;">
-        <b>Language:</b> English | <a href="ib-vi.html" style="text-decoration: underline;">Tiếng Việt</a>
+        <b>Language:</b> <a href="#" style="color: #0033CC; text-decoration: underline;">English</a> | Tiếng Việt
     </div>
-    
-        <!-- KHỐI LOGO NGÂN HÀNG CĂN GIỮA TUYỆT ĐỐI (Không viết thêm gì) -->
-    <center style="margin-top: 25px; margin-bottom: -3px;">
-        <img src="ib-logo.png" alt="The Cam Lo Investment Bank Logo" 
-             style="width: 450px; height: auto; object-fit: contain;">
+
+    <!-- LOGO ĐẠI BẢN DOANH CĂN GIỮA -->
+    <center style="margin-top: 10px; margin-bottom: 30px;">
+        <font size="6" face="Calibri" style="font-weight: bold; letter-spacing: 1px;">CAM LO INVESTMENT BANK</font><br>
+        <span style="font-size: 13px; font-style: italic; display: inline-block; margin-top: 5px;">The full-service investment banking and advisory.</span>
     </center>
-        
-    <!-- ĐƯỜNG KẺ NGANG ĐẬM THẺ <hr> -->
-    <hr color="#A0A0A0" size="1">
-    <br>
- 
-    <!-- DANH SÁCH 2 LOẠI HÌNH HOẠT ĐỘNG CĂN LỀ TRÁI, FONT SIZE 16PX -->
-    <div class="ib-links" style="font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif; font-size: 16px; line-height: 1.4; padding-left: 5px;">
-        <!-- Khối loại hình 1 -->
-        <p style="margin: 0 0 15px 0;">
-            <a href="boring-fund.html">NQH Boring Fund</a><br>
-            <span style="color: #000000; font-size: 13px; font-style: italic; display: inline-block; margin-top: 2px;">The official investment arm of Cam Lo Group.</span>
-        </p>
-        
-        <!-- Khối loại hình 2 -->
-        <p style="margin: 0 0 10px 0;">
-            <a href="#">Società Immobiliare di Cam Lo</a><br>
-            <span style="color: #000000; font-size: 13px; font-style: italic; display: inline-block; margin-top: 2px;">Offering premier and flexible residential leasing solutions with excellence.</span>
-        </p>
+    
+    <hr color="#A0A0A0" size="1" style="margin-bottom: 25px;">
 
-<!-- Khối loại hình 3 -->
-        <p style="margin: 0 0 10px 0;">
-            <a href="merchant-bank.html">Cam Lo Merchant Banking</a><br>
-            <span style="color: #000000; font-size: 13px; font-style: italic; display: inline-block; margin-top: 2px;">Direct investments & professional advisory services.</span>
-        </p>
+    <!-- ================= HỆ THỐNG LƯỚI CHIA 2 DỊCH VỤ MỖI DÒNG ================= -->
+    <div class="ib-grid">
+        
+        <!-- TRỤ CỘT 1: CAM LO SECURITIES -->
+        <div class="service-block">
+            <div class="service-title">Cam Lo Securities</div>
+            <span style="font-size: 13px; font-style: italic; color: #000000;">Deals, advisory services, and securities underwriting.</span>
+        </div>
 
-<div class="service-block">
+        <!-- TRỤ CỘT 2: CAM LO STANDARD INSURANCE -->
+        <div class="service-block">
+            <div class="service-title">Cam Lo Standard Insurance</div>
+            <span style="font-size: 13px; font-style: italic; color: #000000;">Premium non-life insurance solutions of the highest standard.</span>
+        </div>
+
+        <!-- TRỤ CỘT 3: CAM LO INVESTMENT RESEARCH -->
+        <div class="service-block">
+            <div class="service-title">Cam Lo Investment Research</div>
+            <span style="font-size: 13px; font-style: italic; color: #000000;">Data-driven corporate analysis, macro insights, and strategic evaluation.</span>
+        </div>
+
+        <!-- TRỤ CỘT 4: CAM LO ASSET MANAGEMENT -->
+        <div class="service-block">
             <div class="service-title" style="margin-bottom: 2px;">Cam Lo Asset Management</div>
             
-            <!-- Sơ đồ cây nét đứt mộc mạc, bấm chuyển hướng trực tiếp trên cùng một tab -->
+            <!-- Sơ đồ cây nét đứt mộc mạc, các thẻ div/span block ép bẻ hàng dọc tuyệt đối -->
             <div class="tree-container">
-                <span class="tree-line">&nbsp;&nbsp;&nbsp;&nbsp;|</span>
-                <span class="tree-line">&nbsp;&nbsp;&nbsp;&nbsp;|____ <a href="boring-fund.html" style="color: #0033CC; text-decoration: underline;">NQH Boring Fund</a></span>
-                <span class="tree-line">&nbsp;&nbsp;&nbsp;&nbsp;|</span>
-                <span class="tree-line">&nbsp;&nbsp;&nbsp;&nbsp;|____ <a href="merchant-bank.html" style="color: #0033CC; text-decoration: underline;">Cam Lo Merchant Banking</a></span>
-                <span class="tree-line">&nbsp;&nbsp;&nbsp;&nbsp;|</span>
-                <span class="tree-line">&nbsp;&nbsp;&nbsp;&nbsp;|____ <a href="#" style="color: #0033CC; text-decoration: underline;">Società Immobiliare di Cam Lo</a></span>
+                <div class="tree-line">    |</div>
+                <div class="tree-line">    |____ <a href="boring-fund.html">NQH Boring Fund</a></div>
+                <div class="tree-line">    |</div>
+                <div class="tree-line">    |____ <a href="merchant-bank.html">Cam Lo Merchant Banking</a></div>
+                <div class="tree-line">    |</div>
+                <div class="tree-line">    |____ <a href="#">Società Immobiliare di Cam Lo</a></div>
             </div>
         </div>
-        
+
     </div>
-<br>
-    <!-- ĐƯỜNG KẺ NGANG TRƯỚC KHI ĐẾN PHẦN ALL RIGHTS RESERVED -->
-    <hr width="100%" color="#A0A0A0" size="1">
-    
-    <center style="margin-top: 25px;">
-        <font size="2" color="#000000">
-            © 2026 Cam Lo Investment Bank, a Cam Lo Company.</span>
-        </font>
+
+    <!-- CHÂN TRANG BẢN QUYỀN CỐ ĐỊNH Ở ĐÁY -->
+    <br><br><br>
+    <hr color="#A0A0A0" size="1">
+    <center style="margin-top: 20px; font-size: 13px;">
+        © 2026 Cam Lo Investment Bank, a Cam Lo Company. All rights reserved.
     </center>
+
 </body>
 </html>
